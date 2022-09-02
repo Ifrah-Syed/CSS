@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation</title>
+    <style>
+        .navbar
+        {
+            background-color: rgb(248, 83, 111);
+            border-radius: 17px;
+            margin: auto;
+            width: 90%;
+        }
+        .navbar li
+        {
+            float: left; /*now the navbar styling won't apply to it bcx its floating*/
+            list-style: none;   /*list style gives style to the list*/
+            margin: 6px 11px;
+        }
+        .navbar ul
+        {
+            overflow: auto; 
+            /*to apply effects on the floating elements*/
+        }
+        .navbar li a
+        {
+            text-decoration: none;
+            color: seashell;
+            padding: 3px 3px;
+        }
+        .navbar li a:hover
+        {
+            color: yellow;
+        }
+        .navbar input
+        {
+            margin: 5px;
+            border: 2px solid yellow;
+            border-radius: 17px;
+            width: 18%;
+            float: right;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

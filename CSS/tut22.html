@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors & more designing</title>
+    <style>
+      .container{
+          border: 2px solid palevioletred;
+          background-color:greenyellow;
+          padding: 34px;;
+          margin: 34px;
+          width: 666px;
+      }
+      .btn
+      {
+          background-color: peru;
+          padding: 6px;
+          border: none; /*so that both donot have borders..initially contact us had border*/ 
+          cursor: pointer; /*gives hand cursor to contact us..initially it didn't had it*/
+          font-size: 12px;
+          border-radius: 3px;
+      }
+      a
+      {
+          text-decoration: none; /*to remove underline(any decoration)from read more*/
+          color: seagreen;
+      }
+      a:hover /*pseudo selector*/
+       {
+           color: red; /*gets red when we hover on it*/
+           background-color: turquoise;
+       }
+       a:visited/*pseudo selector*/
+      {
+          color: darkblue /*if the link is visited, color becomes dark blue*/
+      }
+      a:active/*pseudo selector*/
+      {
+          background-color: rgb(223, 233, 223); /*when we click on the link, it get this color*/
+      }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error consectetur, molestiae, cum similique culpa facilis quaerat iusto reiciendis vel magni, eos sit qui distinctio inventore dolorem ratione officiis voluptatibus voluptatum.</p>
+        <a href="http://yahoo.com"class="btn">read more</a>
+        <button class="btn">contact us</button>
+    </div>
+</body>
+</html>

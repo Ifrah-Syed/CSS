@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box shadow nd text shadow</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+    }
+    .card {
+      padding: 23px 12px;
+      margin: 23px 12px;
+      border: 2px solid brown;
+      background-color: burlywood;
+      /* box-shadow: offset-x offset-y blur-radius spread-radius */
+      box-shadow: 15px 4px green;  
+      box-shadow: -5px -4px green;
+      box-shadow: 5px 4px 16px green;
+      box-shadow: inset 24px 5px green;
+      box-shadow: 11px 4px red, 20px 8px pink;
+    }
+    .card h2{
+        text-shadow: 5px 3px 25px violet ;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="card" id="class-1">
+        <h2>This is c++ course</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio culpa
+          cupiditate tempore dolorum quos, repellendus distinctio, quam,
+          asperiores ea dignissimos facilis excepturi rem recusandae aut dolores
+          illum sapiente error impedit magnam. Necessitatibus, architecto
+          mollitia.
+        </p>
+      </div>
+      <div class="card" id="class-2">
+        <h2>This is HTML course</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime alias
+          quibusdam consequuntur cupiditate nihil at, molestiae voluptate itaque
+          nisi. Et nemo numquam aut, neque ducimus mollitia consequatur
+          blanditiis obcaecati sit ex, aliquid incidunt id?
+        </p>
+      </div>
+      <div class="card" id="class-3">
+        <h2>card 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi et
+          neque possimus, error assumenda, quia nesciunt iure placeat laborum
+          molestiae aperiam unde. Hic perferendis, illum autem quis repudiandae
+          deleniti dolore? Possimus quidem libero quos.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <title>CSS transition</title>
+    <style>
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px; 
+    background-color:yellow;
+    transition-property: all;
+    /* transition applied to all properties */
+    transition-duration: 3s;
+    transition-timing-function: ease-in;
+    /* starts slow and then paces */
+    transition-delay: 0.5s;
+    font-family: 'Poppins', sans-serif;
+}
+#box:hover{
+    background-color: plum;
+    height: 400px;
+    width: 700px;
+    border-radius: 300px;
+    font-size: 40px;
+}
+/* styling done to transition */
+    </style>
+</head>
+<body>
+    <h3>this is css transition tutorial</h3>
+    <div class="container">
+        <div id="box">
+            I m going to grow. Watch me
+        </div>
+    </div>
+</body>
+</html>

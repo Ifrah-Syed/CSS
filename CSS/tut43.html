@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiple columns- newspaper style</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer'
+            /* grid templates area creates a newspaper layout */
+            ;
+        }
+        .item{
+            background-color:white;
+            border: 3px solid black;
+        }
+        /* setting ids as grid area */
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="navbar">
+            <h4>Todays headlines</h4>
+        </div>
+        <div class="item" id="section">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel fugit accusamus beatae voluptatum provident optio fugiat labore exercitationem doloremque amet, sequi sit dicta eveniet porro quis nobis saepe! Praesentium obcaecati pariatur sint enim, aliquid debitis, vitae nisi quibusdam provident blanditiis est iste doloremque dicta sequi error ex. Accusamus quisquam distinctio architecto corrupti autem vitae esse at eum doloremque laboriosam inventore, aperiam voluptas possimus eveniet, quae laborum animi assumenda nobis vel quibusdam mollitia. Neque in facere, necessitatibus dignissimos voluptatem, ut non qui earum dolorum praesentium delectus, repellendus voluptate voluptas. Illo obcaecati, repellat consectetur dolore assumenda debitis, quia odit beatae maiores pariatur magni! Provident, optio numquam fugiat incidunt laudantium, in, suscipit maiores explicabo inventore recusandae cum voluptates nihil? Quidem, expedita dicta! Tempora, mollitia. Qui nihil delectus error inventore ex nostrum rem aut hic, quasi maiores minus facilis quaerat illo, culpa eius aliquid beatae enim. Praesentium aspernatur ipsa a, laboriosam aperiam, asperiores voluptatibus reiciendis, et in vero maiores iure! Possimus neque quas quibusdam accusamus quos officia voluptatum, eum tempore modi nisi tempora aspernatur alias eaque, nam corporis fuga amet, fugiat architecto. Ab voluptate delectus sint eligendi modi dolores minus reiciendis, porro nesciunt adipisci perferendis autem saepe, cum distinctio commodi aut nemo! Quam, minus. Labore laudantium in voluptatum maiores, reiciendis perspiciatis necessitatibus? Corporis, placeat beatae. Commodi dolor, voluptatem error mollitia consequatur eum delectus possimus minima nihil, harum deserunt recusandae optio. Animi, perferendis voluptas atque esse magnam laudantium earum vitae, soluta aspernatur pariatur blanditiis iure delectus maiores! Nam sint maxime officia nulla ratione. Aperiam minima perspiciatis rerum distinctio magnam iusto tempora dolores voluptate eaque vitae. Mollitia molestias optio perferendis aut doloribus adipisci amet unde deserunt, vel consequatur molestiae vero sapiente, in ad modi minus dolor maiores at quidem earum nam reiciendis sequi omnis magni. Dolor minima nam recusandae a doloremque veniam qui, molestiae maxime animi?
+        </div>
+        <div class="item" id="aside">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus accusamus ab natus explicabo quasi, illum provident aperiam maxime maiores voluptates repellendus a, cum, veritatis sit adipisci perspiciatis mollitia est. Ratione tempora corrupti odio, a, repellendus sint deleniti ipsa beatae asperiores ducimus sunt hic consequuntur animi nobis necessitatibus et, totam iste mollitia! Quasi cum tempore hic voluptas sapiente corrupti facilis voluptates ratione qui eligendi perspiciatis ab laboriosam adipisci similique delectus, dicta debitis expedita nihil, repellendus repellat! Suscipit architecto optio dolorem corporis reprehenderit, qui, provident ex necessitatibus pariatur at placeat amet aspernatur officia molestias eius unde quas blanditiis ab assumenda a labore? Incidunt, quo earum? Atque quos sint ipsum distinctio possimus culpa cum laudantium nobis. Nesciunt nobis, nisi distinctio aliquam debitis, delectus ullam velit eveniet temporibus, itaque placeat quibusdam reiciendis vitae soluta. Accusantium distinctio exercitationem commodi veritatis itaque modi fugiat placeat. Suscipit itaque iusto earum, repudiandae dicta nemo ut tempore, a quis debitis adipisci reiciendis incidunt, perspiciatis officiis deserunt dolor accusantium voluptatibus iure quae totam. Vero sit at, quibusdam perspiciatis adipisci quia nihil voluptatibus minima ipsam facere. Aut, magni et porro recusandae temporibus odit ea iusto voluptatum veniam laboriosam architecto nostrum nihil, aliquid tenetur quos. Dolore repellat magni tempora fuga natus reiciendis molestias! Culpa repellendus vitae architecto perspiciatis, explicabo sint quam placeat odit ad mollitia ut, magnam maiores totam recusandae! Itaque nam corrupti labore quis officia eligendi libero magnam veniam saepe modi dignissimos tenetur animi tempora voluptates nesciunt, harum odio asperiores! Corrupti ipsam sapiente laboriosam eum quidem ipsum sequi nesciunt cupiditate quibusdam, dolorum porro optio rerum fugit dicta sed, tempore hic voluptatem magnam vitae totam dolorem! Recusandae harum quia nihil quod ad, quisquam vero? Accusamus repellendus unde maxime modi adipisci voluptas ipsa, fugiat esse quasi nostrum aliquid nam eius, accusantium at id omnis facilis laudantium tempore non ea suscipit. Sunt, dolor laboriosam!
+        </div>
+        <div class="item" id="footer">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab modi molestiae quos explicabo maiores, voluptates similique veniam voluptate autem, eius fuga non, libero error reiciendis! Aut, laudantium eos.
+        </div>
+       
+    </div>
+</body>
+</html>

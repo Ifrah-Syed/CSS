@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container
+        {
+            height: 500px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row; /*default value*/
+            flex-direction: column;
+            flex-direction: column-reverse;  
+            flex-wrap: wrap; 
+            /*will get boxes to next line when responsive nd default no wrap*/
+            flex-wrap: wrap-reverse; 
+            flex-flow: row wrap;  
+            /*combine direction and wrap */
+            justify-content: center; 
+            /*keeps everything in centre*/
+            justify-content: space-between; 
+            /*gives equal space btw 2 boxes without from ends*/
+            justify-content: space-evenly; 
+            /*space btw boxes with ends*/
+            justify-content: space-around; 
+            /*margin for each box both sides*/
+            align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: stretch;
+        }
+        .item{
+            height: 200px;
+            width: 200px;
+           background-color: tomato;
+           border: 2px solid green;
+           margin: 10px;
+           padding: 3px;
+        }
+        #item_1
+        {
+          /* flex properties of child item 1 */
+          order: 2; 
+          /* one with higher order will go at last - by default,  */
+        }
+        #item_2
+        {
+            flex-grow: 3; 
+            /*higher value grows faster tham lower when being responsive*/
+        }
+        #item_3
+        {
+           flex-shrink: 4;
+           /*higher value shrink faster than lower when being responsive*/
+        }
+        #item_4
+        {
+            flex-shrink: 7;
+            flex-basis: 290px;
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="item" id="item_1">first box</div>
+       <div class="item" id="item_2">second box</div>
+       <div class="item" id="item_3">third box</div>
+       <div class="item" id="item_4">fourth box</div>
+       <div class="item" id="item_5">fifth box</div>
+       <div class="item" id="item_6">sixth box</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height, width, borders and background</title>
+    <style>
+        #firstPara
+        {
+            background-color: red;
+            height: 100px;
+            width: 360px;
+            /*border-color: royalblue;
+            border-style: solid; 
+            border-width: 4px;*/
+            border: 4px solid royalblue; /*above 3 lines can be written like this*/
+            border-radius: 18px; /*to round the border corners*/
+        }
+        #secondPara
+        {
+            background-color: sienna;
+            height: 100px;
+            width: 360px;
+            border-top: 4px solid maroon; 
+            /* similarly, border-bottom, border-left, border-right */
+            border-bottom: 4px solid purple;
+            border-bottom-left-radius: 15px;
+            border-top-right-radius: 15px;
+            /* similarly, bottom-right and top-left */
+        }
+        #thirdPara
+        {   
+            
+            height: 1000px;
+            width: 890px;
+            background-image: url('sample.jpeg'); /*this syntax if image file in css folder*/    
+            background-repeat: no-repeat;/*to prevent repetition of image*/
+            background-position: 12px 43px; /*to shift image to the centre of top*/
+            /* likewise, 12px top-> to shift image 12px from left at the top i.e.,along x axis
+                12px 45px for shifting in both x and y
+                center center for absolute center
+                bottom right for extreme right of bottom
+                */
+            }
+    </style>
+</head>
+<body>
+    <h3>This is heading</h3>
+    <p id="firstPara">This is a paragraph</p>
+    <p id="secondPara">This is my second paragraph</p>
+    <p id="thirdPara">This is my third paragraph</p>
+</body>
+</html>

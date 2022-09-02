@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        div p{
+            color: yellow;
+            background-color: green;
+        }
+        /* div p will affect only p inside div- DESCENDANT */
+        div li p{
+            color: hotpink;
+            background-color:khaki;
+        }
+        /* css will affect if p is direct child of div - Direct descendant */
+        div>p{
+            color: lightcoral;
+        }
+        /* css will affect if p is sibling of div- ADJACENT SIBLING */
+        div+p{
+            color: lightslategray;
+        }
+        /* attribute selector */
+       
+        input[type='text']
+        {
+            padding: 23px;
+            border: 2px solid black;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+   <h1>this is more on selectors</h1>
+   <div class="container">
+       <div class="row">
+           <ul>
+               <li class="item"><p>this is another paragraph</p></li>
+               <li>this will not get affected</li>
+           </ul>
+           <p>this is a paragraph</p>
+       </div>
+       <p>this is another paragraph</p>
+   </div>
+   <p>this is outermost paragraph</p>
+   <form action="" class="form-control">
+    <input type="text" placeholder="enter your name">
+    <input type="password" placeholder="enter your password">
+</form>
+</body>
+</html>

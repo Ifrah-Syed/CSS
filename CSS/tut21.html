@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment- Float and clear</title>
+</head>
+ <style>
+     *
+     {
+         box-sizing: border-box;
+     }
+     .container
+     {
+       width: 900px;
+       border: 3px solid purple;
+       margin: 30px auto; /* takes the element to center by taking equal margins from left and right*/
+     }
+     .item
+     {
+         border: 2px solid grey;
+         margin: 12px 3px;
+         padding: 12px 3px;
+         background-color: burlywood;
+     }
+     #fruits
+     {
+         float: left;
+         width: 26%;
+     }
+     /* element fruit would float to left */
+     #stationary
+     {
+         float: left;
+         width: 12%;
+     }
+     /* floating fruits and stationary elements would overlap on computer so we use clear */
+     #computer
+     {
+         clear: left;
+     }
+     p,h3
+     {
+         text-align: right; /*text would start from extreme right*/
+         text-align: justify; /*text would start and end at both extremes*/
+         text-align: center; /*each line symmetrical*/
+     }
+ </style>
+<body>
+    <div class="container">
+       <div id="fruits" class="item">
+          <h3>Fruits</h3>
+          <p id="fruitspara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur vitae autem vero asperiores doloremque! Molestias temporibus aliquid aspernatur minima rem porro maxime labore corrupti, nihil autem vitae officia tempora veniam.</p>
+       </div>
+       <div id="computer" class="item">
+          <h3>computer</h3>
+          <p id="fruitspara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur vitae autem vero asperiores doloremque! Molestias temporibus aliquid aspernatur minima rem porro maxime labore corrupti, nihil autem vitae officia tempora veniam.</p>
+       </div>
+       <div id="stationary" class="item">
+          <h3>stationary</h3>
+          <p id="fruitspara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur vitae autem vero asperiores doloremque! Molestias temporibus aliquid aspernatur minima rem porro maxime labore corrupti, nihil autem vitae officia tempora veniam.</p>
+       </div>
+    </div>
+</body>
+</html>
